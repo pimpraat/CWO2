@@ -13,6 +13,11 @@
 		3070225C201F422F000BCBD3 /* CWO2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3070225A201F422F000BCBD3 /* CWO2.xcdatamodeld */; };
 		3070225E201F422F000BCBD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3070225D201F422F000BCBD3 /* Assets.xcassets */; };
 		30702261201F422F000BCBD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3070225F201F422F000BCBD3 /* LaunchScreen.storyboard */; };
+		30702269201F4594000BCBD3 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30702268201F4594000BCBD3 /* NotesViewController.swift */; };
+		307CB294202077D000C7B388 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307CB293202077D000C7B388 /* SkillsViewController.swift */; };
+		307CB29620207F2700C7B388 /* LesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307CB29520207F2700C7B388 /* LesViewController.swift */; };
+		307CB2982020892D00C7B388 /* SelectSailorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307CB2972020892D00C7B388 /* SelectSailorViewController.swift */; };
+		30C299B2202271E3001207F5 /* SailorSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C299B1202271E3001207F5 /* SailorSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		3070225D201F422F000BCBD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30702260201F422F000BCBD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30702262201F422F000BCBD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30702268201F4594000BCBD3 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		307CB293202077D000C7B388 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
+		307CB29520207F2700C7B388 /* LesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LesViewController.swift; sourceTree = "<group>"; };
+		307CB2972020892D00C7B388 /* SelectSailorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSailorViewController.swift; sourceTree = "<group>"; };
+		30C299B1202271E3001207F5 /* SailorSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailorSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +69,11 @@
 				30702253201F422F000BCBD3 /* AppDelegate.swift */,
 				30702255201F422F000BCBD3 /* ViewController.swift */,
 				30702257201F422F000BCBD3 /* Main.storyboard */,
+				30C299B1202271E3001207F5 /* SailorSettingsViewController.swift */,
+				307CB2972020892D00C7B388 /* SelectSailorViewController.swift */,
+				307CB29520207F2700C7B388 /* LesViewController.swift */,
+				307CB293202077D000C7B388 /* SkillsViewController.swift */,
+				30702268201F4594000BCBD3 /* NotesViewController.swift */,
 				3070225D201F422F000BCBD3 /* Assets.xcassets */,
 				3070225F201F422F000BCBD3 /* LaunchScreen.storyboard */,
 				30702262201F422F000BCBD3 /* Info.plist */,
@@ -139,8 +154,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30702269201F4594000BCBD3 /* NotesViewController.swift in Sources */,
+				307CB29620207F2700C7B388 /* LesViewController.swift in Sources */,
+				307CB2982020892D00C7B388 /* SelectSailorViewController.swift in Sources */,
+				30C299B2202271E3001207F5 /* SailorSettingsViewController.swift in Sources */,
 				30702256201F422F000BCBD3 /* ViewController.swift in Sources */,
 				3070225C201F422F000BCBD3 /* CWO2.xcdatamodeld in Sources */,
+				307CB294202077D000C7B388 /* SkillsViewController.swift in Sources */,
 				30702254201F422F000BCBD3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +299,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7963Q8L7YR;
 				INFOPLIST_FILE = CWO2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Pim-Praat.CWO2";
@@ -293,6 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7963Q8L7YR;
 				INFOPLIST_FILE = CWO2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Pim-Praat.CWO2";
