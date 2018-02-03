@@ -22,26 +22,25 @@ class LesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let currentlessonnumber = safe.string(forKey: "CurrentLessonNumber")
+        let currentlessonnumber = safe.string(forKey: "CurrentLessonNumber")!
+        let CurrentSailorNumber = safe.string(forKey: "CurrentSailorNumber")!
         
         
         
         // Get stored values and display
-        standenbedieningvandezeilen.selectedSegmentIndex = safe.integer(forKey:  String("standenbedieningvandezeilen" + "\(String(describing: currentlessonnumber))"))
+        standenbedieningvandezeilen.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "standenbedieningvandezeilen" + currentlessonnumber))
         
-        sturenroerenzwaardbediening.selectedSegmentIndex = safe.integer(forKey:  String("sturenroerenzwaardbediening" + "\(String(describing: currentlessonnumber))"))
+        sturenroerenzwaardbediening.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "sturenroerenzwaardbediening" + currentlessonnumber))
         
-        overstaggaan.selectedSegmentIndex = safe.integer(forKey:  String("overstaggaan" + "\(String(describing: currentlessonnumber))"))
+        overstaggaan.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "overstaggaan" + currentlessonnumber))
         
-        opkruisen.selectedSegmentIndex = safe.integer(forKey:  String("opkruisen" + "\(String(describing: currentlessonnumber))"))
+        opkruisen.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "opkruisen" + currentlessonnumber))
         
-        gijpen.selectedSegmentIndex = safe.integer(forKey:  String("gijpen" + "\(String(describing: currentlessonnumber))"))
+        gijpen.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "gijpen" + currentlessonnumber))
         
-        afvarenhogerenlangswal.selectedSegmentIndex = safe.integer(forKey:  String("afvarenhogerenlangswal" + "\(String(describing: currentlessonnumber))"))
+        afvarenhogerenlangswal.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "afvarenhogerenlangswal" + currentlessonnumber))
         
-        aankomen.selectedSegmentIndex = safe.integer(forKey:  String("aankomen" + "\(String(describing: currentlessonnumber))"))
-        
-        
+        aankomen.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "aankomen" + currentlessonnumber))
 
         // Do any additional setup after loading the view.
     }
@@ -49,7 +48,8 @@ class LesViewController: UIViewController {
     @IBAction func back(_ sender: Any) {
         
      //  let str = ("standenbedieningvandezeilen" + "\(b)")
-        let currentlessonnumber = safe.string(forKey: "CurrentLessonNumber")
+        let currentlessonnumber = safe.string(forKey: "CurrentLessonNumber")!
+        let CurrentSailorNumber = safe.string(forKey: "CurrentSailorNumber")!
         
         
         // Save samen met currentLessonNumber achteraan
@@ -57,19 +57,19 @@ class LesViewController: UIViewController {
         
      //   safe.set(bootzeilklaar.selectedSegmentIndex, forKey: "bootzeilklaar")
         
-        safe.set(standenbedieningvandezeilen.selectedSegmentIndex, forKey: String("standenbedieningvandezeilen" + "\(String(describing: currentlessonnumber))"))
+        safe.set(standenbedieningvandezeilen.selectedSegmentIndex, forKey: (CurrentSailorNumber + "standenbedieningvandezeilen" + currentlessonnumber))
         
-        safe.set(sturenroerenzwaardbediening.selectedSegmentIndex, forKey: String("sturenroerenzwaardbediening" + "\(String(describing: currentlessonnumber))"))
+        safe.set(sturenroerenzwaardbediening.selectedSegmentIndex, forKey: (CurrentSailorNumber + "sturenroerenzwaardbediening" + currentlessonnumber))
         
-        safe.set(overstaggaan.selectedSegmentIndex, forKey: String("overstaggaan" + "\(String(describing: currentlessonnumber))"))
+        safe.set(overstaggaan.selectedSegmentIndex, forKey: (CurrentSailorNumber + "overstaggaan" + currentlessonnumber))
         
-        safe.set(opkruisen.selectedSegmentIndex, forKey: String("opkruisen" + "\(String(describing: currentlessonnumber))"))
+        safe.set(opkruisen.selectedSegmentIndex, forKey: (CurrentSailorNumber + "opkruisen" + currentlessonnumber))
         
-        safe.set(gijpen.selectedSegmentIndex, forKey: String("gijpen" + "\(String(describing: currentlessonnumber))"))
+        safe.set(gijpen.selectedSegmentIndex, forKey:(CurrentSailorNumber + "gijpen" + currentlessonnumber))
         
-        safe.set(afvarenhogerenlangswal.selectedSegmentIndex, forKey: String("afvarenhogerenlangswal" + "\(String(describing: currentlessonnumber))"))
+        safe.set(afvarenhogerenlangswal.selectedSegmentIndex, forKey: (CurrentSailorNumber + "afvarenhogerenlangswal" + currentlessonnumber))
         
-        safe.set(aankomen.selectedSegmentIndex, forKey: String("aankomen" + "\(String(describing: currentlessonnumber))"))
+        safe.set(aankomen.selectedSegmentIndex, forKey: (CurrentSailorNumber + "aankomen" + currentlessonnumber))
         
         
         
@@ -77,7 +77,7 @@ class LesViewController: UIViewController {
         
         NSLog("Saved")
         
-        safe.set(0, forKey: "CurrentLessonNumber")
+       // safe.set(0, forKey: "CurrentLessonNumber")
     }
     
     

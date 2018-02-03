@@ -201,6 +201,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <viewLayoutGuide key="safeArea" id="HMp-by-CTU"/>
                     </view>
                     <connections>
@@ -219,8 +220,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welke les wil je graden?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWX-3i-Ne4">
-                                <rect key="frame" x="96" y="98" width="182" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Welke les wil je beoordelen?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWX-3i-Ne4">
+                                <rect key="frame" x="96" y="98" width="215" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -806,7 +807,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="6hQ-mb-s71"/>
-        <segue reference="JZm-za-jhZ"/>
-        <segue reference="mxb-Oo-cvy"/>
+        <segue reference="mh6-qC-Rgj"/>
+        <segue reference="khf-iL-RPm"/>
     </inferredMetricsTieBreakers>
 </document>

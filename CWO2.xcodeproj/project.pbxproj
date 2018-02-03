@@ -17,6 +17,7 @@
 		307CB294202077D000C7B388 /* SkillsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307CB293202077D000C7B388 /* SkillsViewController.swift */; };
 		307CB29620207F2700C7B388 /* LesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307CB29520207F2700C7B388 /* LesViewController.swift */; };
 		307CB2982020892D00C7B388 /* SelectSailorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307CB2972020892D00C7B388 /* SelectSailorViewController.swift */; };
+		30BC621520265C8700AEAE40 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BC621420265C8700AEAE40 /* SettingsViewController.swift */; };
 		30C299B2202271E3001207F5 /* SailorSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C299B1202271E3001207F5 /* SailorSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		307CB293202077D000C7B388 /* SkillsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewController.swift; sourceTree = "<group>"; };
 		307CB29520207F2700C7B388 /* LesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LesViewController.swift; sourceTree = "<group>"; };
 		307CB2972020892D00C7B388 /* SelectSailorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSailorViewController.swift; sourceTree = "<group>"; };
+		30BC621420265C8700AEAE40 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		30C299B1202271E3001207F5 /* SailorSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SailorSettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 				30702255201F422F000BCBD3 /* ViewController.swift */,
 				30702257201F422F000BCBD3 /* Main.storyboard */,
 				30C299B1202271E3001207F5 /* SailorSettingsViewController.swift */,
+				30BC621420265C8700AEAE40 /* SettingsViewController.swift */,
 				307CB2972020892D00C7B388 /* SelectSailorViewController.swift */,
 				307CB29520207F2700C7B388 /* LesViewController.swift */,
 				307CB293202077D000C7B388 /* SkillsViewController.swift */,
@@ -162,6 +165,7 @@
 				3070225C201F422F000BCBD3 /* CWO2.xcdatamodeld in Sources */,
 				307CB294202077D000C7B388 /* SkillsViewController.swift in Sources */,
 				30702254201F422F000BCBD3 /* AppDelegate.swift in Sources */,
+				30BC621520265C8700AEAE40 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

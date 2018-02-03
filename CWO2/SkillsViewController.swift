@@ -11,7 +11,8 @@ import UIKit
 class SkillsViewController: UIViewController {
     
     let safe = UserDefaults.standard
-
+    
+    
     @IBOutlet weak var bootzeilklaar: UISegmentedControl!
     @IBOutlet weak var boottewaterlaten: UISegmentedControl!
     @IBOutlet weak var schiemanswerk: UISegmentedControl!
@@ -24,46 +25,56 @@ class SkillsViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         // GET SEGMENTED CONTROLS FROM USERDEFAULTS AND APPLY!
+        let CurrentSailorNumber:String  = safe.string(forKey: "CurrentSailorNumber")!
         
-        bootzeilklaar.selectedSegmentIndex = safe.integer(forKey: "bootzeilklaar")
-        boottewaterlaten.selectedSegmentIndex = safe.integer(forKey: "boottewaterlaten")
-        schiemanswerk.selectedSegmentIndex = safe.integer(forKey: "schiemanswerk")
-        zeiltermenenonderdelen.selectedSegmentIndex = safe.integer(forKey: "zeiltermenenonderdelen")
-        regelementen.selectedSegmentIndex = safe.integer(forKey: "regelementen")
-        veiligheid.selectedSegmentIndex = safe.integer(forKey: "veiligheid")
+        
+        bootzeilklaar.selectedSegmentIndex = safe.integer(forKey: (CurrentSailorNumber + "bootzeilklaar"))
+        boottewaterlaten.selectedSegmentIndex = safe.integer(forKey: (CurrentSailorNumber + "boottewaterlaten"))
+        schiemanswerk.selectedSegmentIndex = safe.integer(forKey: (CurrentSailorNumber + "schiemanswerk"))
+        zeiltermenenonderdelen.selectedSegmentIndex = safe.integer(forKey: (CurrentSailorNumber + "zeiltermenenonderdelen"))
+        regelementen.selectedSegmentIndex = safe.integer(forKey: (CurrentSailorNumber + "regelementen"))
+        veiligheid.selectedSegmentIndex = safe.integer(forKey: (CurrentSailorNumber + "veiligheid"))
         
         
     }
+    
+    // MARK - Informatie pushes
 
     @IBAction func ibootzeilklaar(_ sender: Any) {
-        PushMessage(title: "Boot zeil- en nachtklaar maken", message: "beschrijving uit het handboek!")
+        PushMessage(title: "Boot zeil- en nachtklaar maken", message: "Zeilklaar maken: boot zeilklaar maken op de wal. Zeil dat reeds is bevestigd aan de rondhouten in het schip aanbrengen, zeilschoot inscheren, spriet bevestigen. Inventaris compleet maken. Nachtklaar maken: mast en zeil uit de boot nemen, zeil (nog bevestigd aan mast en giek) goed oprollen, inventaris uit het schip halen, schip schoon en droog maken.")
     }
     
     @IBAction func boottewaterlaten(_ sender: Any) {
+        PushMessage(title: "Boot te water laten en varen", message: "Te water laten: kunnen meehelpen bij het in het water laten van de boot. Verhalen d.m.v.: roeien: met twee riemen rechtuit roeien, bochten draaien en afstoppen en/of Peddelen: met behulp van een peddel of ander daartoe geschikt voorwerp de boot verhalen.")
     }
     
     @IBAction func schiemanswerk(_ sender: Any) {
+        PushMessage(title: "Schiemanswerk", message: "In de in praktijk voorkomende gevallen de volgende steken kunnen leggen: Slipsteek met daarop een halve steek, achtknoop.")
     }
     
     @IBAction func zeiltermenenonderdelen(_ sender: Any) {
+        PushMessage(title: "Zeiltermen en benaming van onderdelen van de boot", message: "Zeiltermen: Het kunnen aangeven wat wordt bedoeld met vijf van de volgende termen: in de wind, halve wind, voor de wind, aan de wind, hoger- en lagerwal, bakboord, stuurboord, hoge en lage zijde en loef- en lijzijde van het schip, killen van het zeil. Benamingen: Het kunnen benoemen van minimaal vijf onderdelen van de eigen boot en tuigage.")
     }
     
     @IBAction func regelementen(_ sender: Any) {
+        PushMessage(title: "Regelementen", message: "De volgende regels uit het Binnenvaartpolitiereglement kunnen toepassen: 1.04 Voorzorgsmaatregelen 1.05 Afwijking reglement 6.04 lid 6,8 Tegengestelde koersen: kleine zeilschepen onderling en zeil – spier – motor 6.17 lid 6 Kruisende koersen: kleine zeilschepen onderling")
     }
     
     @IBAction func veiligheid(_ sender: Any) {
+        PushMessage(title: "Veiligheid", message: "Kunnen vertellen wat te doen als de boot omslaat en dit in praktijk een keer hebben gezien.")
     }
     
     @IBAction func back(_ sender: Any) {
         //back slaat ook op
         
+         let CurrentSailorNumber:String  = safe.string(forKey: "CurrentSailorNumber")!
         
-        safe.set(bootzeilklaar.selectedSegmentIndex, forKey: "bootzeilklaar")
-        safe.set(boottewaterlaten.selectedSegmentIndex, forKey: "boottewaterlaten")
-        safe.set(schiemanswerk.selectedSegmentIndex, forKey: "schiemanswerk")
-        safe.set(zeiltermenenonderdelen.selectedSegmentIndex, forKey: "zeiltermenenonderdelen")
-        safe.set(regelementen.selectedSegmentIndex, forKey: "regelementen")
-        safe.set(veiligheid.selectedSegmentIndex, forKey: "veiligheid")
+        safe.set(bootzeilklaar.selectedSegmentIndex, forKey: ((CurrentSailorNumber + "bootzeilklaar")))
+        safe.set(boottewaterlaten.selectedSegmentIndex, forKey: (CurrentSailorNumber + "boottewaterlaten"))
+        safe.set(schiemanswerk.selectedSegmentIndex, forKey: (CurrentSailorNumber + "schiemanswerk"))
+        safe.set(zeiltermenenonderdelen.selectedSegmentIndex, forKey: (CurrentSailorNumber + "zeiltermenenonderdelen"))
+        safe.set(regelementen.selectedSegmentIndex, forKey: (CurrentSailorNumber + "regelementen"))
+        safe.set(veiligheid.selectedSegmentIndex, forKey: (CurrentSailorNumber + "veiligheid"))
         NSLog("Saved")
         
         

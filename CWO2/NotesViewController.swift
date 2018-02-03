@@ -19,16 +19,22 @@ class NotesViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         NSLog(sailornumber!);
-        notefield.text = safe.string(forKey: "notes")
+        
+        let key = safe.string(forKey: "CurrentSailorNumber")! + "notes"
+        
+        notefield.text = safe.string(forKey: key)
     }
     @IBAction func back(_ sender: Any) {
-        safe.set(notefield.text, forKey: "notes")
+         let key = safe.string(forKey: "CurrentSailorNumber")! + "notes"
+        safe.set(notefield.text, forKey: key)
     }
     
     @IBAction func save(_ sender: Any) {
         // Save in NSUserdefaults for current sailornumber
-        safe.set("Simplified iOS", forKey: "nameKey")
-        if let name = safe.string(forKey: "notes") {
+         let key = safe.string(forKey: "CurrentSailorNumber")! + "notes"
+        
+        safe.set("Notities over de zeiler, evt per les", forKey: key)
+        if let name = safe.string(forKey: key) {
             //use the name variable here
             notefield.text = name
         }
