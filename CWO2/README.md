@@ -2,8 +2,7 @@
 
 
 - veranderende CWO eisen (naar ander judge paneel)
-- trainingsgroep bij zeiler variabelen
-- Uitprintfunctie uitzoeken
+
+
+Toekomst:
 - if sailor is empty, goto edit
-Wachten op:
-- onboarding images van Niels

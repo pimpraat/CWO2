@@ -26,14 +26,14 @@ class SkillsViewController: UIViewController {
         
         // GET SEGMENTED CONTROLS FROM USERDEFAULTS AND APPLY!
         let CurrentSailorNumber:String  = safe.string(forKey: "CurrentSailorNumber")!
+        let trainingsgroep  = safe.string(forKey: "trainingsgroep")!
         
-        
-        bootzeilklaar.selectedSegmentIndex = safe.integer(forKey: (CurrentSailorNumber + "bootzeilklaar"))
-        boottewaterlaten.selectedSegmentIndex = safe.integer(forKey: (CurrentSailorNumber + "boottewaterlaten"))
-        schiemanswerk.selectedSegmentIndex = safe.integer(forKey: (CurrentSailorNumber + "schiemanswerk"))
-        zeiltermenenonderdelen.selectedSegmentIndex = safe.integer(forKey: (CurrentSailorNumber + "zeiltermenenonderdelen"))
-        regelementen.selectedSegmentIndex = safe.integer(forKey: (CurrentSailorNumber + "regelementen"))
-        veiligheid.selectedSegmentIndex = safe.integer(forKey: (CurrentSailorNumber + "veiligheid"))
+        bootzeilklaar.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "bootzeilklaar"))
+        boottewaterlaten.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "boottewaterlaten"))
+        schiemanswerk.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "schiemanswerk"))
+        zeiltermenenonderdelen.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "zeiltermenenonderdelen"))
+        regelementen.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "regelementen"))
+        veiligheid.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "veiligheid"))
         
         
     }
@@ -68,13 +68,14 @@ class SkillsViewController: UIViewController {
         //back slaat ook op
         
          let CurrentSailorNumber:String  = safe.string(forKey: "CurrentSailorNumber")!
+        let trainingsgroep = safe.string(forKey: "trainingsgroep")!
         
-        safe.set(bootzeilklaar.selectedSegmentIndex, forKey: ((CurrentSailorNumber + "bootzeilklaar")))
-        safe.set(boottewaterlaten.selectedSegmentIndex, forKey: (CurrentSailorNumber + "boottewaterlaten"))
-        safe.set(schiemanswerk.selectedSegmentIndex, forKey: (CurrentSailorNumber + "schiemanswerk"))
-        safe.set(zeiltermenenonderdelen.selectedSegmentIndex, forKey: (CurrentSailorNumber + "zeiltermenenonderdelen"))
-        safe.set(regelementen.selectedSegmentIndex, forKey: (CurrentSailorNumber + "regelementen"))
-        safe.set(veiligheid.selectedSegmentIndex, forKey: (CurrentSailorNumber + "veiligheid"))
+        safe.set(bootzeilklaar.selectedSegmentIndex, forKey: ((trainingsgroep + CurrentSailorNumber + "bootzeilklaar")))
+        safe.set(boottewaterlaten.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "boottewaterlaten"))
+        safe.set(schiemanswerk.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "schiemanswerk"))
+        safe.set(zeiltermenenonderdelen.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "zeiltermenenonderdelen"))
+        safe.set(regelementen.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "regelementen"))
+        safe.set(veiligheid.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "veiligheid"))
         NSLog("Saved")
         
         

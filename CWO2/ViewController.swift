@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     // Declare outlets
     @IBOutlet weak var nameLabel:UILabel!
     @IBOutlet weak var cwoLabel:UILabel!
+    @IBOutlet weak var imageview:UIImageView!
     
     var sailornumer = "1"
     let safe = UserDefaults.standard
@@ -28,8 +29,8 @@ class ViewController: UIViewController {
         
         
         nameLabel.text = safe.string(forKey: ("name" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
-        var targetcwoint = (1 + (safe.integer(forKey: ("cwo" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))))
-        var targetcwo = String(targetcwoint)
+        let targetcwoint = (1 + (safe.integer(forKey: ("cwo" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))))
+        let targetcwo = String(targetcwoint)
         
         cwoLabel.text = ("CWO " + targetcwo)
         

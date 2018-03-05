@@ -27,24 +27,26 @@ class LesViewController: UIViewController {
         let CurrentSailorNumber = safe.string(forKey: "CurrentSailorNumber")!
         let trainingsgroep = safe.string(forKey: "trainingsgroep")!
         
-        
-        
         // Get stored values and display
-        standenbedieningvandezeilen.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "standenbedieningvandezeilen" + currentlessonnumber))
+        standenbedieningvandezeilen.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "standenbedieningvandezeilen" + currentlessonnumber))
         
-        sturenroerenzwaardbediening.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "sturenroerenzwaardbediening" + currentlessonnumber))
+        sturenroerenzwaardbediening.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "sturenroerenzwaardbediening" + currentlessonnumber))
         
-        overstaggaan.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "overstaggaan" + currentlessonnumber))
+        overstaggaan.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "overstaggaan" + currentlessonnumber))
         
-        opkruisen.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "opkruisen" + currentlessonnumber))
+        opkruisen.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "opkruisen" + currentlessonnumber))
         
-        gijpen.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "gijpen" + currentlessonnumber))
+        gijpen.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "gijpen" + currentlessonnumber))
         
-        afvarenhogerenlangswal.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "afvarenhogerenlangswal" + currentlessonnumber))
+        afvarenhogerenlangswal.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "afvarenhogerenlangswal" + currentlessonnumber))
         
-        aankomen.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "aankomen" + currentlessonnumber))
+        aankomen.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "aankomen" + currentlessonnumber))
         
+       
         lesnotes.text = safe.string(forKey: (trainingsgroep + currentlessonnumber))
+        if lesnotes.text == "" {
+            lesnotes.text = "Weer, wind en wat heb je gedaan?"
+        }
 
         // Do any additional setup after loading the view.
     }
@@ -61,19 +63,19 @@ class LesViewController: UIViewController {
         
      //   safe.set(bootzeilklaar.selectedSegmentIndex, forKey: "bootzeilklaar")
         
-        safe.set(standenbedieningvandezeilen.selectedSegmentIndex, forKey: (CurrentSailorNumber + "standenbedieningvandezeilen" + currentlessonnumber))
+        safe.set(standenbedieningvandezeilen.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "standenbedieningvandezeilen" + currentlessonnumber))
         
-        safe.set(sturenroerenzwaardbediening.selectedSegmentIndex, forKey: (CurrentSailorNumber + "sturenroerenzwaardbediening" + currentlessonnumber))
+        safe.set(sturenroerenzwaardbediening.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "sturenroerenzwaardbediening" + currentlessonnumber))
         
-        safe.set(overstaggaan.selectedSegmentIndex, forKey: (CurrentSailorNumber + "overstaggaan" + currentlessonnumber))
+        safe.set(overstaggaan.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "overstaggaan" + currentlessonnumber))
         
-        safe.set(opkruisen.selectedSegmentIndex, forKey: (CurrentSailorNumber + "opkruisen" + currentlessonnumber))
+        safe.set(opkruisen.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "opkruisen" + currentlessonnumber))
         
-        safe.set(gijpen.selectedSegmentIndex, forKey:(CurrentSailorNumber + "gijpen" + currentlessonnumber))
+        safe.set(gijpen.selectedSegmentIndex, forKey:(trainingsgroep + CurrentSailorNumber + "gijpen" + currentlessonnumber))
         
-        safe.set(afvarenhogerenlangswal.selectedSegmentIndex, forKey: (CurrentSailorNumber + "afvarenhogerenlangswal" + currentlessonnumber))
+        safe.set(afvarenhogerenlangswal.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "afvarenhogerenlangswal" + currentlessonnumber))
         
-        safe.set(aankomen.selectedSegmentIndex, forKey: (CurrentSailorNumber + "aankomen" + currentlessonnumber))
+        safe.set(aankomen.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "aankomen" + currentlessonnumber))
         
         safe.set(lesnotes.text, forKey: (trainingsgroep + currentlessonnumber))
         

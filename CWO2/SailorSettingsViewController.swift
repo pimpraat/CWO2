@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SailorSettingsViewController: UIViewController {
+class SailorSettingsViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     let safe = UserDefaults.standard
 
@@ -16,7 +16,7 @@ class SailorSettingsViewController: UIViewController {
     @IBOutlet weak var CwoSelector: UISegmentedControl!
     @IBOutlet weak var AantalMansSelector: UISegmentedControl!
     @IBOutlet weak var notefield: UITextView!
-    
+    @IBOutlet var myImg: UIImageView!
     
    
     
@@ -35,6 +35,27 @@ class SailorSettingsViewController: UIViewController {
         
     }
     
+    @IBAction func takePhoto(_ sender: AnyObject) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
+        
+        
+        
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        if let pickedImage = info[UIImagePickerControllerOriginalImage] as? UIImage {
+            myImg.contentMode = .scaleToFill
+            myImg.image = pickedImage
+        }
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
     @IBAction func back(_ sender: Any) {
 
         
@@ -46,6 +67,8 @@ class SailorSettingsViewController: UIViewController {
         safe.set(CwoSelector.selectedSegmentIndex, forKey: ("cwo" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
         safe.set(AantalMansSelector.selectedSegmentIndex, forKey: ("mans" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
         safe.set(notefield.text, forKey: ("notes" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+      
+     //   safe.set(myImg.image, forKey: ("picture" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
         
     }
     
