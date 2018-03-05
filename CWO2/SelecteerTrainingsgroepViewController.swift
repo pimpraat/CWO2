@@ -29,6 +29,11 @@ class SelecteerTrainingsgroepViewController: UIViewController {
     }
     
 
+    @IBAction func print() {
+        let safe = UserDefaults.standard
+        NSLog("%@", safe.dictionaryRepresentation())
+    }
+    
     /*
     // MARK: - Navigation
 

@@ -8,14 +8,32 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
+    // Declare outlets
+    @IBOutlet weak var nameLabel:UILabel!
+    @IBOutlet weak var cwoLabel:UILabel!
+    
     var sailornumer = "1"
     let safe = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let safe = UserDefaults.standard
+        let CurrentSailorNumberr = safe.string(forKey: "CurrentSailorNumber")!
+        let CurrentTrainingsgroep = safe.string(forKey: "trainingsgroep")!
+        
+        
+        nameLabel.text = safe.string(forKey: ("name" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+        var targetcwoint = (1 + (safe.integer(forKey: ("cwo" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))))
+        var targetcwo = String(targetcwoint)
+        
+        cwoLabel.text = ("CWO " + targetcwo)
+        
+        
     }
     
     
@@ -32,21 +50,9 @@ class ViewController: UIViewController {
     @IBAction func les10(_ sender: Any) {safe.set(10, forKey: "CurrentLessonNumber")}
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
     @IBAction func gotonotes(_ sender: UIButton) {
     performSegue(withIdentifier: "to_notes", sender: self)
     }
-    
-    
-    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -62,6 +68,8 @@ class ViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
+        
     }
 
 
