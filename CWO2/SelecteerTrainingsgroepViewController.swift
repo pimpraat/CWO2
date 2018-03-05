@@ -16,6 +16,13 @@ class SelecteerTrainingsgroepViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    let safe = UserDefaults.standard
+    
+    @IBAction func optib(_ sender: Any) { safe.set("optia", forKey: "trainingsgroep") }
+    @IBAction func optic(_ sender: Any) { safe.set("optib", forKey: "trainingsgroep") }
+    @IBAction func optid(_ sender: Any) { safe.set("optic", forKey: "trainingsgroep") }
+    @IBAction func splashlaser(_ sender: Any) { safe.set("splashlaser", forKey: "trainingsgroep") }
+    @IBAction func tweemans(_ sender: Any) { safe.set("tweemans", forKey: "trainingsgroep") }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

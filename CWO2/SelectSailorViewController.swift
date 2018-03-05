@@ -17,7 +17,7 @@ class SelectSailorViewController: UIViewController {
         // Do any additional setup after loading the view.
         // Set names from save
         let safe = UserDefaults.standard
-        zeiler1.setTitle(safe.string(forKey: "NameSailor1"), for: .normal)
+     //   zeiler1.setTitle(safe.string(forKey: "NameSailor1"), for: .normal)
         
         
         
@@ -44,6 +44,14 @@ class SelectSailorViewController: UIViewController {
     @IBAction func sailor10(_ sender: Any) { safe.set("10", forKey: "CurrentSailorNumber") }
     @IBAction func sailor11(_ sender: Any) { safe.set("11", forKey: "CurrentSailorNumber") }
     @IBAction func sailor12(_ sender: Any) { safe.set("12", forKey: "CurrentSailorNumber") }
+    @IBAction func sailor13(_ sender: Any) { safe.set("13", forKey: "CurrentSailorNumber") }
+    @IBAction func sailor14(_ sender: Any) { safe.set("14", forKey: "CurrentSailorNumber") }
+    @IBAction func sailor15(_ sender: Any) { safe.set("15", forKey: "CurrentSailorNumber") }
+    @IBAction func sailor16(_ sender: Any) { safe.set("16", forKey: "CurrentSailorNumber") }
+    @IBAction func sailor17(_ sender: Any) { safe.set("17", forKey: "CurrentSailorNumber") }
+    @IBAction func sailor18(_ sender: Any) { safe.set("18", forKey: "CurrentSailorNumber") }
+    @IBAction func sailor19(_ sender: Any) { safe.set("19", forKey: "CurrentSailorNumber") }
+    @IBAction func sailor20(_ sender: Any) { safe.set("20", forKey: "CurrentSailorNumber") }
     
 
     /*
