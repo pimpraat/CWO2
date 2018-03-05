@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		306FAC72204DDC1100D67CD8 /* CWO2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306FAC71204DDC1100D67CD8 /* CWO2Tests.swift */; };
 		30702254201F422F000BCBD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30702253201F422F000BCBD3 /* AppDelegate.swift */; };
 		30702256201F422F000BCBD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30702255201F422F000BCBD3 /* ViewController.swift */; };
 		30702259201F422F000BCBD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30702257201F422F000BCBD3 /* Main.storyboard */; };
@@ -22,7 +23,20 @@
 		30C299B2202271E3001207F5 /* SailorSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C299B1202271E3001207F5 /* SailorSettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		306FAC74204DDC1100D67CD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30702248201F422F000BCBD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3070224F201F422F000BCBD3;
+			remoteInfo = CWO2;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		306FAC6F204DDC1100D67CD8 /* CWO2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CWO2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		306FAC71204DDC1100D67CD8 /* CWO2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CWO2Tests.swift; sourceTree = "<group>"; };
+		306FAC73204DDC1100D67CD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30702250201F422F000BCBD3 /* CWO2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CWO2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30702253201F422F000BCBD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30702255201F422F000BCBD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -42,6 +56,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		306FAC6C204DDC1100D67CD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3070224D201F422F000BCBD3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,10 +73,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		306FAC70204DDC1100D67CD8 /* CWO2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				306FAC71204DDC1100D67CD8 /* CWO2Tests.swift */,
+				306FAC73204DDC1100D67CD8 /* Info.plist */,
+			);
+			path = CWO2Tests;
+			sourceTree = "<group>";
+		};
 		30702247201F422F000BCBD3 = {
 			isa = PBXGroup;
 			children = (
 				30702252201F422F000BCBD3 /* CWO2 */,
+				306FAC70204DDC1100D67CD8 /* CWO2Tests */,
 				30702251201F422F000BCBD3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +95,7 @@
 			isa = PBXGroup;
 			children = (
 				30702250201F422F000BCBD3 /* CWO2.app */,
+				306FAC6F204DDC1100D67CD8 /* CWO2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,6 +125,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		306FAC6E204DDC1100D67CD8 /* CWO2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 306FAC78204DDC1100D67CD8 /* Build configuration list for PBXNativeTarget "CWO2Tests" */;
+			buildPhases = (
+				306FAC6B204DDC1100D67CD8 /* Sources */,
+				306FAC6C204DDC1100D67CD8 /* Frameworks */,
+				306FAC6D204DDC1100D67CD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				306FAC75204DDC1100D67CD8 /* PBXTargetDependency */,
+			);
+			name = CWO2Tests;
+			productName = CWO2Tests;
+			productReference = 306FAC6F204DDC1100D67CD8 /* CWO2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		3070224F201F422F000BCBD3 /* CWO2 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 30702265201F4230000BCBD3 /* Build configuration list for PBXNativeTarget "CWO2" */;
@@ -120,6 +170,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Pim Praat";
 				TargetAttributes = {
+					306FAC6E204DDC1100D67CD8 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3070224F201F422F000BCBD3;
+					};
 					3070224F201F422F000BCBD3 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -140,11 +195,19 @@
 			projectRoot = "";
 			targets = (
 				3070224F201F422F000BCBD3 /* CWO2 */,
+				306FAC6E204DDC1100D67CD8 /* CWO2Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		306FAC6D204DDC1100D67CD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3070224E201F422F000BCBD3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -158,6 +221,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		306FAC6B204DDC1100D67CD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				306FAC72204DDC1100D67CD8 /* CWO2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3070224C201F422F000BCBD3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -176,6 +247,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		306FAC75204DDC1100D67CD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3070224F201F422F000BCBD3 /* CWO2 */;
+			targetProxy = 306FAC74204DDC1100D67CD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		30702257201F422F000BCBD3 /* Main.storyboard */ = {
@@ -197,6 +276,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		306FAC76204DDC1100D67CD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7963Q8L7YR;
+				INFOPLIST_FILE = CWO2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pim-Praat.CWO2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CWO2.app/CWO2";
+			};
+			name = Debug;
+		};
+		306FAC77204DDC1100D67CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7963Q8L7YR;
+				INFOPLIST_FILE = CWO2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Pim-Praat.CWO2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CWO2.app/CWO2";
+			};
+			name = Release;
+		};
 		30702263201F422F000BCBD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -337,6 +448,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		306FAC78204DDC1100D67CD8 /* Build configuration list for PBXNativeTarget "CWO2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				306FAC76204DDC1100D67CD8 /* Debug */,
+				306FAC77204DDC1100D67CD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		3070224B201F422F000BCBD3 /* Build configuration list for PBXProject "CWO2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
