@@ -9,7 +9,28 @@
 import UIKit
 
 class SelectSailorViewController: UIViewController {
-    @IBOutlet weak var zeiler1: UIButton!
+    
+    @IBOutlet weak var sailor1outlet: UIButton!
+    @IBOutlet weak var sailor2outlet: UIButton!
+    @IBOutlet weak var sailor3outlet: UIButton!
+    @IBOutlet weak var sailor4outlet: UIButton!
+    @IBOutlet weak var sailor5outlet: UIButton!
+    @IBOutlet weak var sailor6outlet: UIButton!
+    @IBOutlet weak var sailor7outlet: UIButton!
+    @IBOutlet weak var sailor8outlet: UIButton!
+    @IBOutlet weak var sailor9outlet: UIButton!
+    @IBOutlet weak var sailor10outlet: UIButton!
+    @IBOutlet weak var sailor11outlet: UIButton!
+    @IBOutlet weak var sailor12outlet: UIButton!
+    @IBOutlet weak var sailor13outlet: UIButton!
+    @IBOutlet weak var sailor14outlet: UIButton!
+    @IBOutlet weak var sailor15outlet: UIButton!
+    @IBOutlet weak var sailor16outlet: UIButton!
+    @IBOutlet weak var sailor17outlet: UIButton!
+    @IBOutlet weak var sailor18outlet: UIButton!
+    @IBOutlet weak var sailor19outlet: UIButton!
+    @IBOutlet weak var sailor20outlet: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,13 +38,15 @@ class SelectSailorViewController: UIViewController {
         // Do any additional setup after loading the view.
         // Set names from save
         let safe = UserDefaults.standard
-     //   zeiler1.setTitle(safe.string(forKey: "NameSailor1"), for: .normal)
+        let CurrentTrainingsgroep = safe.string(forKey: "trainingsgroep")!
         
         
-        
-        
-    }
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "1")) != nil { sailor1outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "1"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "2")) != nil { sailor2outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "2"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "3")) != nil { sailor3outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "3"))), for: UIControlState.normal)}
+    
 
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

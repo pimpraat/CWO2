@@ -19,11 +19,13 @@ class LesViewController: UIViewController {
     @IBOutlet weak var gijpen: UISegmentedControl!
     @IBOutlet weak var afvarenhogerenlangswal: UISegmentedControl!
     @IBOutlet weak var aankomen: UISegmentedControl!
+    @IBOutlet weak var lesnotes: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let currentlessonnumber = safe.string(forKey: "CurrentLessonNumber")!
         let CurrentSailorNumber = safe.string(forKey: "CurrentSailorNumber")!
+        let trainingsgroep = safe.string(forKey: "trainingsgroep")!
         
         
         
@@ -41,6 +43,8 @@ class LesViewController: UIViewController {
         afvarenhogerenlangswal.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "afvarenhogerenlangswal" + currentlessonnumber))
         
         aankomen.selectedSegmentIndex = safe.integer(forKey:(CurrentSailorNumber + "aankomen" + currentlessonnumber))
+        
+        lesnotes.text = safe.string(forKey: (trainingsgroep + currentlessonnumber))
 
         // Do any additional setup after loading the view.
     }
@@ -50,7 +54,7 @@ class LesViewController: UIViewController {
      //  let str = ("standenbedieningvandezeilen" + "\(b)")
         let currentlessonnumber = safe.string(forKey: "CurrentLessonNumber")!
         let CurrentSailorNumber = safe.string(forKey: "CurrentSailorNumber")!
-        
+        let trainingsgroep = safe.string(forKey: "trainingsgroep")!
         
         // Save samen met currentLessonNumber achteraan
         
@@ -71,6 +75,7 @@ class LesViewController: UIViewController {
         
         safe.set(aankomen.selectedSegmentIndex, forKey: (CurrentSailorNumber + "aankomen" + currentlessonnumber))
         
+        safe.set(lesnotes.text, forKey: (trainingsgroep + currentlessonnumber))
         
         
         

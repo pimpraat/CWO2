@@ -11,43 +11,69 @@ import UIKit
 class SailorSettingsViewController: UIViewController {
     
     let safe = UserDefaults.standard
-    
-    // Outlets
-    
-    // alert met dropdown om alles te verwijderen?
-    
-    @IBOutlet weak var sailor1_field: UITextField!
-    @IBOutlet weak var sailor1_Delete: UIButton!
-    @IBOutlet weak var CwoSelectorSailor1: UISegmentedControl!
+
+    @IBOutlet weak var NameField: UITextField!
+    @IBOutlet weak var CwoSelector: UISegmentedControl!
+    @IBOutlet weak var AantalMansSelector: UISegmentedControl!
+    @IBOutlet weak var notefield: UITextView!
     
     
-    // TODO IMPLEMENT DELETE FUNCTION
+   
     
+    
+    @IBAction override func delete(_ sender: Any?) {
+        // DELETE SAILOR AND PUT BACK DUMMY DATA
+        let CurrentSailorNumberr = safe.string(forKey: "CurrentSailorNumber")!
+        let CurrentTrainingsgroep = safe.string(forKey: "trainingsgroep")!
+        
+        safe.set("Zeiler", forKey: ("name" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+        safe.set(0, forKey: ("cwo" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+        safe.set(0, forKey: ("mans" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+        safe.set("Geboortedatum: dd-mm-yyyy", forKey: ("notes" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+        
+        
+        
+    }
     
     @IBAction func back(_ sender: Any) {
+
         
-        // TODO: SAVE EVERY FIELD
+        let CurrentSailorNumberr = safe.string(forKey: "CurrentSailorNumber")!
+        let CurrentTrainingsgroep = safe.string(forKey: "trainingsgroep")!
         
-        safe.set(sailor1_field.text, forKey: "NameSailor1")
-        safe.set(CwoSelectorSailor1.selectedSegmentIndex, forKey: "CertificateSailor1")
+        
+        safe.set(NameField.text, forKey: ("name" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+        safe.set(CwoSelector.selectedSegmentIndex, forKey: ("cwo" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+        safe.set(AantalMansSelector.selectedSegmentIndex, forKey: ("mans" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+        safe.set(notefield.text, forKey: ("notes" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
         
     }
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         
-        // TODO: SET ALL DATA
         
+        
+        let CurrentSailorNumberr = safe.string(forKey: "CurrentSailorNumber")!
+        let CurrentTrainingsgroep = safe.string(forKey: "trainingsgroep")!
+        
+        
+        if safe.string(forKey:("name" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr)) != nil {
+            NameField.text = safe.string(forKey: ("name" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+            CwoSelector.selectedSegmentIndex = safe.integer(forKey: ("cwo" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+            AantalMansSelector.selectedSegmentIndex = safe.integer(forKey:("mans" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+            notefield.text = safe.string(forKey: ("notes" + CurrentTrainingsgroep + "Sailor" + CurrentSailorNumberr))
+            
+        }
     }
-
+/*
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+    */
 
     /*
     // MARK: - Navigation
