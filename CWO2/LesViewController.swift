@@ -42,6 +42,14 @@ class LesViewController: UIViewController {
         
         aankomen.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "aankomen" + currentlessonnumber))
         
+        let targetcwo = safe.integer(forKey: ("cwo" + trainingsgroep + "Sailor" + CurrentSailorNumber))
+        if targetcwo == 1 {
+            //maak voor 2 en 3 onzichtbaar
+        }
+        
+        if targetcwo == 2 {
+            // maak die voor 3 ontzichtbaar
+        }
        
         lesnotes.text = safe.string(forKey: (trainingsgroep + currentlessonnumber))
         if lesnotes.text == "" {
