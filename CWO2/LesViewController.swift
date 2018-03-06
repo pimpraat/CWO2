@@ -23,9 +23,14 @@ class LesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let safe = UserDefaults.standard
         let currentlessonnumber = safe.string(forKey: "CurrentLessonNumber")!
         let CurrentSailorNumber = safe.string(forKey: "CurrentSailorNumber")!
         let trainingsgroep = safe.string(forKey: "trainingsgroep")!
+        
+        
+       
         
         // Get stored values and display
         standenbedieningvandezeilen.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "standenbedieningvandezeilen" + currentlessonnumber))

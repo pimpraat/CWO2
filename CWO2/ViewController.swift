@@ -39,7 +39,16 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func les1(_ sender: Any) { safe.set(1, forKey: "CurrentLessonNumber")}
+    @IBAction func les1(_ sender: Any) { safe.set(1, forKey: "CurrentLessonNumber")
+        
+        let currentlessonnumber = safe.string(forKey: "CurrentLessonNumber")!
+        let CurrentSailorNumber = safe.string(forKey: "CurrentSailorNumber")!
+        let trainingsgroep = safe.string(forKey: "trainingsgroep")!
+        
+        NSLog(currentlessonnumber + CurrentSailorNumber + trainingsgroep)
+        
+        
+    }
     @IBAction func les2(_ sender: Any) { safe.set(2, forKey: "CurrentLessonNumber")}
     @IBAction func les3(_ sender: Any) { safe.set(3, forKey: "CurrentLessonNumber")}
     @IBAction func les4(_ sender: Any) { safe.set(4, forKey: "CurrentLessonNumber")}
