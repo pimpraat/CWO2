@@ -12,7 +12,14 @@ class LesViewController: UIViewController {
 
     let safe = UserDefaults.standard
     
-     @IBOutlet weak var standenbedieningvandezeilen: UISegmentedControl!
+    
+    // Declare views
+    @IBOutlet weak var cwo2eisen: UIView!
+    @IBOutlet weak var cwo3eisen: UIView!
+    
+    
+    // Declare UISegmentedControls
+    @IBOutlet weak var standenbedieningvandezeilen: UISegmentedControl!
     @IBOutlet weak var sturenroerenzwaardbediening: UISegmentedControl!
     @IBOutlet weak var overstaggaan: UISegmentedControl!
     @IBOutlet weak var opkruisen: UISegmentedControl!
@@ -21,6 +28,8 @@ class LesViewController: UIViewController {
     @IBOutlet weak var aankomen: UISegmentedControl!
     @IBOutlet weak var lesnotes: UITextView!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,9 +37,9 @@ class LesViewController: UIViewController {
         let currentlessonnumber = safe.string(forKey: "CurrentLessonNumber")!
         let CurrentSailorNumber = safe.string(forKey: "CurrentSailorNumber")!
         let trainingsgroep = safe.string(forKey: "trainingsgroep")!
-        
-        
        
+        cwo3eisen.isHidden = false
+        cwo2eisen.isHidden = false
         
         // Get stored values and display
         standenbedieningvandezeilen.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "standenbedieningvandezeilen" + currentlessonnumber))
@@ -48,12 +57,16 @@ class LesViewController: UIViewController {
         aankomen.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "aankomen" + currentlessonnumber))
         
         let targetcwo = safe.integer(forKey: ("cwo" + trainingsgroep + "Sailor" + CurrentSailorNumber))
-        if targetcwo == 1 {
+        if targetcwo == 0 {
             //maak voor 2 en 3 onzichtbaar
+            cwo3eisen.isHidden = true
+            cwo3eisen.isHidden = true
+            
         }
         
-        if targetcwo == 2 {
+        if targetcwo == 1 {
             // maak die voor 3 ontzichtbaar
+            cwo3eisen.isHidden = true
         }
        
         lesnotes.text = safe.string(forKey: (trainingsgroep + currentlessonnumber))
