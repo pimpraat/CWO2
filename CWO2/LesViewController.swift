@@ -26,6 +26,24 @@ class LesViewController: UIViewController {
     @IBOutlet weak var gijpen: UISegmentedControl!
     @IBOutlet weak var afvarenhogerenlangswal: UISegmentedControl!
     @IBOutlet weak var aankomen: UISegmentedControl!
+    // Dat hierboven is al gedaan
+    @IBOutlet weak var aanlopenbovenwindsgelegenpunt: UISegmentedControl!
+    @IBOutlet weak var hangtechnieken: UISegmentedControl!
+    @IBOutlet weak var bootstilleggenenopgangbrengen: UISegmentedControl!
+    @IBOutlet weak var bzvaartechniekencwo2: UISegmentedControl!
+    @IBOutlet weak var veilighandelenmetwindvlagen: UISegmentedControl!
+    @IBOutlet weak var opkruisennauwvaarwater: UISegmentedControl!
+    @IBOutlet weak var bijzondercwo3: UISegmentedControl!
+    @IBOutlet weak var afmerenvdboot: UISegmentedControl!
+    @IBOutlet weak var zeiltrim: UISegmentedControl!
+    
+    
+    
+    
+    
+    
+    
+    
     @IBOutlet weak var lesnotes: UITextView!
     
     
@@ -56,6 +74,11 @@ class LesViewController: UIViewController {
         
         aankomen.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "aankomen" + currentlessonnumber))
         
+        
+        
+        
+        
+        
         let targetcwo = safe.integer(forKey: ("cwo" + trainingsgroep + "Sailor" + CurrentSailorNumber))
         if targetcwo == 0 {
             //maak voor 2 en 3 onzichtbaar
@@ -68,6 +91,8 @@ class LesViewController: UIViewController {
             // maak die voor 3 ontzichtbaar
             cwo3eisen.isHidden = true
         }
+        
+        
        
         lesnotes.text = safe.string(forKey: (trainingsgroep + currentlessonnumber))
         if lesnotes.text == "" {

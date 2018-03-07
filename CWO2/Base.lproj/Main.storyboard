@@ -2135,19 +2135,6 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </label>
-                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="89n-cN-uV3">
-                                                        <rect key="frame" x="18" y="172" width="290" height="29"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <segments>
-                                                            <segment title="n.v.t."/>
-                                                            <segment title="--"/>
-                                                            <segment title="-"/>
-                                                            <segment title="+/-"/>
-                                                            <segment title="+"/>
-                                                            <segment title="++"/>
-                                                        </segments>
-                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    </segmentedControl>
                                                     <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ryT-B9-fZZ">
                                                         <rect key="frame" x="18" y="97" width="290" height="29"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -2203,6 +2190,19 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </label>
+                                                    <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="89n-cN-uV3">
+                                                        <rect key="frame" x="18" y="172" width="290" height="29"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <segments>
+                                                            <segment title="n.v.t."/>
+                                                            <segment title="--"/>
+                                                            <segment title="-"/>
+                                                            <segment title="+/-"/>
+                                                            <segment title="+"/>
+                                                            <segment title="++"/>
+                                                        </segments>
+                                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </segmentedControl>
                                                 </subviews>
                                             </view>
                                         </subviews>
@@ -2249,15 +2249,24 @@
                     <size key="freeformSize" width="375" height="1400"/>
                     <connections>
                         <outlet property="aankomen" destination="fZF-9e-aeT" id="OqD-Wo-WgX"/>
+                        <outlet property="aanlopenbovenwindsgelegenpunt" destination="jDR-pG-oz3" id="IYh-2t-kTL"/>
+                        <outlet property="afmerenvdboot" destination="89n-cN-uV3" id="ApY-HU-E7E"/>
                         <outlet property="afvarenhogerenlangswal" destination="jSR-Oo-Tl0" id="Kfa-v1-i6H"/>
+                        <outlet property="bijzondercwo3" destination="ryT-B9-fZZ" id="cpw-tI-TpF"/>
+                        <outlet property="bootstilleggenenopgangbrengen" destination="IWY-Kw-rnk" id="mK5-xZ-gFS"/>
+                        <outlet property="bzvaartechniekencwo2" destination="PVw-yk-end" id="zbM-4L-nYZ"/>
                         <outlet property="cwo2eisen" destination="40X-SU-eiz" id="WAF-vo-Kgo"/>
                         <outlet property="cwo3eisen" destination="f5H-7Q-LLt" id="3KE-N6-zzp"/>
                         <outlet property="gijpen" destination="GYV-83-K7m" id="Y6d-KW-iV8"/>
+                        <outlet property="hangtechnieken" destination="scy-Ks-hY0" id="qoJ-Yw-bkj"/>
                         <outlet property="lesnotes" destination="oEH-2E-bwi" id="ObD-0f-xUe"/>
                         <outlet property="opkruisen" destination="EWb-Bo-hT7" id="RLv-4D-JvY"/>
+                        <outlet property="opkruisennauwvaarwater" destination="oa7-cL-7ua" id="gCX-hc-onH"/>
                         <outlet property="overstaggaan" destination="xX5-BJ-oPL" id="7XQ-LM-KpZ"/>
                         <outlet property="standenbedieningvandezeilen" destination="PVk-ca-3nz" id="OyT-vZ-pfc"/>
                         <outlet property="sturenroerenzwaardbediening" destination="dcu-d5-4sO" id="RfV-ff-suo"/>
+                        <outlet property="veilighandelenmetwindvlagen" destination="bc0-3L-0vT" id="9uz-kn-eoN"/>
+                        <outlet property="zeiltrim" destination="t7V-eE-6uh" id="Km5-eY-MJv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FvA-p6-NCN" sceneMemberID="firstResponder"/>
