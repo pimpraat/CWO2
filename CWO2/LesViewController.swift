@@ -17,7 +17,6 @@ class LesViewController: UIViewController {
     @IBOutlet weak var cwo2eisen: UIView!
     @IBOutlet weak var cwo3eisen: UIView!
     
-    
     // Declare UISegmentedControls
     @IBOutlet weak var standenbedieningvandezeilen: UISegmentedControl!
     @IBOutlet weak var sturenroerenzwaardbediening: UISegmentedControl!
@@ -37,16 +36,7 @@ class LesViewController: UIViewController {
     @IBOutlet weak var afmerenvdboot: UISegmentedControl!
     @IBOutlet weak var zeiltrim: UISegmentedControl!
     
-    
-    
-    
-    
-    
-    
-    
     @IBOutlet weak var lesnotes: UITextView!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,16 +64,22 @@ class LesViewController: UIViewController {
         
         aankomen.selectedSegmentIndex = safe.integer(forKey:(trainingsgroep + CurrentSailorNumber + "aankomen" + currentlessonnumber))
         
-        
-        
-        
+        aanlopenbovenwindsgelegenpunt.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "aanlopenbovenwindsgelegenpunt" + currentlessonnumber))
+        hangtechnieken.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "hangtechnieken" + currentlessonnumber))
+        bootstilleggenenopgangbrengen.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "bootstilleggenenopgangbrengen" + currentlessonnumber))
+        bzvaartechniekencwo2.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "bzvaartechniekencwo2" + currentlessonnumber))
+        veilighandelenmetwindvlagen.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "veilighandelenmetwindvlagen" + currentlessonnumber))
+        opkruisennauwvaarwater.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "opkruisennauwvaarwater" + currentlessonnumber))
+        bijzondercwo3.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "bijzondercwo3" + currentlessonnumber))
+        afmerenvdboot.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "afmerenvdboot" + currentlessonnumber))
+        zeiltrim.selectedSegmentIndex = safe.integer(forKey: (trainingsgroep + CurrentSailorNumber + "zeiltrim" + currentlessonnumber))
+
         
         
         let targetcwo = safe.integer(forKey: ("cwo" + trainingsgroep + "Sailor" + CurrentSailorNumber))
         if targetcwo == 0 {
             //maak voor 2 en 3 onzichtbaar
-            cwo3eisen.isHidden = true
-            cwo3eisen.isHidden = true
+            cwo2eisen.isHidden = true
             
         }
         
@@ -130,7 +126,32 @@ class LesViewController: UIViewController {
         
         safe.set(lesnotes.text, forKey: (trainingsgroep + currentlessonnumber))
         
+        safe.set(aanlopenbovenwindsgelegenpunt.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "aanlopenbovenwindsgelegenpunt" + currentlessonnumber))
         
+        
+        safe.set(hangtechnieken.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "hangtechnieken" + currentlessonnumber))
+        
+        
+        safe.set(bootstilleggenenopgangbrengen.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "bootstilleggenenopgangbrengen" + currentlessonnumber))
+        
+        
+        safe.set(bzvaartechniekencwo2.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "bzvaartechniekencwo2" + currentlessonnumber))
+        
+        
+        safe.set(veilighandelenmetwindvlagen.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "veilighandelenmetwindvlagen" + currentlessonnumber))
+        
+        
+        safe.set(opkruisennauwvaarwater.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "opkruisennauwvaarwater" + currentlessonnumber))
+        
+        
+        safe.set(bijzondercwo3.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "bijzondercwo3" + currentlessonnumber))
+        
+        
+        safe.set(afmerenvdboot.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "afmerenvdboot" + currentlessonnumber))
+        
+        
+        safe.set(zeiltrim.selectedSegmentIndex, forKey: (trainingsgroep + CurrentSailorNumber + "zeiltrim" + currentlessonnumber))
+
         
         
         NSLog("Saved")

@@ -41,12 +41,14 @@ class ViewController: UIViewController {
     
     @IBAction func les1(_ sender: Any) { safe.set(1, forKey: "CurrentLessonNumber")
         
+        
+        // Debug code
         let currentlessonnumber = safe.string(forKey: "CurrentLessonNumber")!
         let CurrentSailorNumber = safe.string(forKey: "CurrentSailorNumber")!
         let trainingsgroep = safe.string(forKey: "trainingsgroep")!
         
         NSLog(currentlessonnumber + CurrentSailorNumber + trainingsgroep)
-        
+        // End debug code
         
     }
     @IBAction func les2(_ sender: Any) { safe.set(2, forKey: "CurrentLessonNumber")}

@@ -22,7 +22,8 @@ class SailorSettingsViewController: UIViewController, UIImagePickerControllerDel
     
     
     @IBAction override func delete(_ sender: Any?) {
-        // DELETE SAILOR AND PUT BACK DUMMY DATA
+        // DELETE SAILOR AND PUT BACK DUMMY DATA, ask for confirmation
+        
         let CurrentSailorNumberr = safe.string(forKey: "CurrentSailorNumber")!
         let CurrentTrainingsgroep = safe.string(forKey: "trainingsgroep")!
         
