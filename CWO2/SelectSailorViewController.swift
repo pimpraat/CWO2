@@ -44,6 +44,23 @@ class SelectSailorViewController: UIViewController {
         if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "1")) != nil { sailor1outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "1"))), for: UIControlState.normal)}
         if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "2")) != nil { sailor2outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "2"))), for: UIControlState.normal)}
         if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "3")) != nil { sailor3outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "3"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "4")) != nil { sailor4outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "4"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "5")) != nil { sailor5outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "5"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "6")) != nil { sailor6outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "6"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "7")) != nil { sailor7outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "7"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "8")) != nil { sailor8outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "8"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "9")) != nil { sailor9outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "9"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "10")) != nil { sailor10outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "10"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "11")) != nil { sailor11outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "11"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "12")) != nil { sailor12outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "12"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "13")) != nil { sailor13outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "13"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "14")) != nil { sailor14outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "4"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "15")) != nil { sailor15outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "15"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "16")) != nil { sailor16outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "16"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "17")) != nil { sailor17outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "17"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "18")) != nil { sailor18outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "18"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "19")) != nil { sailor19outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "19"))), for: UIControlState.normal)}
+        if (safe.string(forKey: "name" + CurrentTrainingsgroep + "Sailor" + "20")) != nil { sailor20outlet.setTitle((safe.string(forKey:( "name" + CurrentTrainingsgroep + "Sailor" + "20"))), for: UIControlState.normal)}
     
 
     }

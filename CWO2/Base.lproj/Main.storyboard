@@ -1086,7 +1086,7 @@
                                 <rect key="frame" x="50" y="197" width="275" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99997597930000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Optimist C" backgroundImage="IMG_8394"/>
+                                <state key="normal" title="Optimist C" backgroundImage="GroupButton-c"/>
                                 <connections>
                                     <action selector="optic:" destination="nIh-jW-sPH" eventType="touchUpInside" id="96X-ug-rre"/>
                                     <segue destination="zBW-Li-WUn" kind="show" id="px9-dX-Nhu"/>
@@ -1096,7 +1096,7 @@
                                 <rect key="frame" x="50" y="304" width="275" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99997597930000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Optimist D" backgroundImage="21192676_1828173277198792_8489339417309179692_n"/>
+                                <state key="normal" title="Optimist D" backgroundImage="Groupbutton-d"/>
                                 <connections>
                                     <action selector="optid:" destination="nIh-jW-sPH" eventType="touchUpInside" id="eti-gW-F09"/>
                                     <segue destination="zBW-Li-WUn" kind="show" id="v84-je-0py"/>
@@ -1106,7 +1106,7 @@
                                 <rect key="frame" x="50" y="518" width="275" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99997597930000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Tweemans" backgroundImage="20621751_1795940637088723_563053806640799230_n"/>
+                                <state key="normal" title="Tweemans" backgroundImage="Groupbutton-tweemans"/>
                                 <connections>
                                     <action selector="tweemans:" destination="nIh-jW-sPH" eventType="touchUpInside" id="fux-Ej-Zoi"/>
                                     <segue destination="zBW-Li-WUn" kind="show" id="Ijf-WX-bYB"/>
@@ -1116,7 +1116,7 @@
                                 <rect key="frame" x="50" y="411" width="275" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99997597930000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Splash / Laser" backgroundImage="splashpico"/>
+                                <state key="normal" title="Splash / Laser" backgroundImage="Groupbutton-lasersplash"/>
                                 <connections>
                                     <action selector="splashlaser:" destination="nIh-jW-sPH" eventType="touchUpInside" id="5HE-e6-Y8F"/>
                                     <segue destination="zBW-Li-WUn" kind="show" id="Yrx-vh-DlC"/>
@@ -1134,7 +1134,7 @@
                                 <rect key="frame" x="50" y="90" width="275" height="99"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.99997597930000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Optimist B" backgroundImage="optib"/>
+                                <state key="normal" title="Optimist B" backgroundImage="GroupButton-b"/>
                                 <connections>
                                     <action selector="optib:" destination="nIh-jW-sPH" eventType="touchUpInside" id="v40-qf-K1l"/>
                                     <segue destination="zBW-Li-WUn" kind="show" id="VO3-zG-ui8"/>
@@ -1299,6 +1299,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sailor9:" destination="zBW-Li-WUn" eventType="touchUpInside" id="V81-xi-cPY"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="aHj-Fi-mLg"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T7x-7K-rac">
@@ -1309,6 +1310,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sailor13:" destination="zBW-Li-WUn" eventType="touchUpInside" id="l9R-fB-oo5"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Bk4-ph-69P"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jpv-3p-jcs">
@@ -1330,6 +1332,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sailor16:" destination="zBW-Li-WUn" eventType="touchUpInside" id="Avs-dM-CGE"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="ise-ZZ-tsX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7NV-ab-teB">
@@ -1372,6 +1375,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sailor12:" destination="zBW-Li-WUn" eventType="touchUpInside" id="vji-On-l3B"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="jn8-9h-Cte"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQi-2u-MiI">
@@ -1382,6 +1386,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sailor15:" destination="zBW-Li-WUn" eventType="touchUpInside" id="uSL-Qt-Rue"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="E0D-ab-OkX"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0vM-4o-lp3">
@@ -1403,6 +1408,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sailor11:" destination="zBW-Li-WUn" eventType="touchUpInside" id="uf1-Z8-Yfe"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="WfQ-2g-uog"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gWS-f6-tKV">
@@ -1413,6 +1419,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sailor18:" destination="zBW-Li-WUn" eventType="touchUpInside" id="jEw-ih-TBg"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="jUJ-lR-DDc"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K9N-ht-W8e">
@@ -1423,6 +1430,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sailor10:" destination="zBW-Li-WUn" eventType="touchUpInside" id="do5-tY-E8R"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="YLj-IQ-1cx"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ATf-PZ-ihC">
@@ -1454,6 +1462,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sailor20:" destination="zBW-Li-WUn" eventType="touchUpInside" id="8Wt-wI-5mc"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="Z5n-di-daY"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuD-Au-3KX">
@@ -1464,6 +1473,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sailor14:" destination="zBW-Li-WUn" eventType="touchUpInside" id="MEY-V9-fTr"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="tlo-5g-ZPr"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHS-IB-KYA">
@@ -1474,6 +1484,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sailor17:" destination="zBW-Li-WUn" eventType="touchUpInside" id="IWL-f1-bjM"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="ywK-F7-W2q"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rc-td-hMH">
@@ -1484,6 +1495,7 @@
                                                 </state>
                                                 <connections>
                                                     <action selector="sailor19:" destination="zBW-Li-WUn" eventType="touchUpInside" id="gZq-ID-ysJ"/>
+                                                    <segue destination="BYZ-38-t0r" kind="presentation" id="iIn-03-Mjb"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mFP-aW-LNf">
@@ -2503,11 +2515,13 @@
         </scene>
     </scenes>
     <resources>
-        <image name="20621751_1795940637088723_563053806640799230_n" width="960" height="720"/>
-        <image name="21192676_1828173277198792_8489339417309179692_n" width="960" height="720"/>
         <image name="BG2" width="375" height="667"/>
         <image name="Big Button" width="319" height="96"/>
-        <image name="IMG_8394" width="4032" height="3024"/>
+        <image name="GroupButton-b" width="275" height="99"/>
+        <image name="GroupButton-c" width="275" height="99"/>
+        <image name="Groupbutton-d" width="275" height="99"/>
+        <image name="Groupbutton-lasersplash" width="275" height="99"/>
+        <image name="Groupbutton-tweemans" width="275" height="99"/>
         <image name="Onboarding1" width="750" height="1334"/>
         <image name="Onboarding2" width="750" height="1334"/>
         <image name="Onboarding3" width="750" height="1334"/>
@@ -2518,15 +2532,13 @@
         <image name="bg-editsailor" width="375" height="667"/>
         <image name="blue-no-waves" width="375" height="667"/>
         <image name="golven" width="375" height="92"/>
-        <image name="optib" width="960" height="540"/>
         <image name="pf-bg" width="255" height="149"/>
-        <image name="splashpico" width="764" height="612"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="R65-6L-8IJ"/>
-        <segue reference="yiM-di-Qxs"/>
+        <segue reference="Ijf-WX-bYB"/>
         <segue reference="NxF-bU-uWA"/>
-        <segue reference="fNs-RA-VBr"/>
+        <segue reference="s4f-zn-Pmz"/>
         <segue reference="dSX-Uq-s33"/>
     </inferredMetricsTieBreakers>
 </document>
